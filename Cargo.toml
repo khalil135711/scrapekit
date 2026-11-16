@@ -1,0 +1,21 @@
+[package]
+name = "scrapekit"
+version = "0.1.0"
+edition = "2021"
+description = "Ein schneller Web-Scraper in Rust mit CLI und Web-UI: CSS-Selektoren rein, Text, Links oder JSON raus"
+license = "MIT"
+readme = "README.md"
+keywords = ["scraper", "cli", "html", "css-selector"]
+categories = ["command-line-utilities", "web-programming"]
+default-run = "scrapekit"
+
+[dependencies]
+anyhow = "1"
+axum = "0.7"
+clap = { version = "4", features = ["derive"] }
+reqwest = { version = "0.12", default-features = false, features = ["blocking", "rustls-tls"] }
+scraper = "0.20"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "net"] }
+url = "2"
