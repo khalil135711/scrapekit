@@ -16,7 +16,7 @@ Ein schneller Web-Scraper in Rust mit CLI und lokaler Web-UI: URL und CSS-Selekt
 ## Installation
 
 ```bash
-git clone https://github.com/DEIN-USERNAME/scrapekit
+git clone https://github.com/khalil135711/scrapekit
 cd scrapekit
 cargo install --path .
 ```
